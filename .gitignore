@@ -1,0 +1,15 @@
+# Go binary files
+*.exe
+*.exe~
+*.out
+*.test
+
+# Vendor folder
+/vendor/
+
+# IDE settings
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
