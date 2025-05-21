@@ -3,10 +3,13 @@ package cmd
 import (
 	"acqua-remind-cli/internal/timer"
 	"fmt"
+	"time"
 )
 
+const timeDuration = 3 * time.Second
+
 func Start() {
-	fmt.Println("The program is starting. Only for 10 sec!")
-	timer.StartTimer()
-	fmt.Println("Time is up!The program is closed!")
+	fmt.Printf("The program is starting! Only for %v!\n", timeDuration)
+	timer.MainTimer(timeDuration)
+	fmt.Println("\nTime is up!The program is closed!")
 }
