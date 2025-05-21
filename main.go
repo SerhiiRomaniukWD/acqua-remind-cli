@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"acqua-remind-cli/cmd"
+)
 
 func main() {
-	fmt.Println("Hello, Acqua reminder!")
+	cmd.Start()
 }
